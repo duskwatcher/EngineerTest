@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Numbers</h1>
+
+
+<%= render 'form', number: @number %>
+
+<% if !@number.nil? && !@number.value.nil? %>
+  Your number: <%= @number.value %>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @number_running.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @number_running.body %>
+</p>
+
+<%= link_to 'Edit', edit_number_running_path(@number_running) %> |
+<%= link_to 'Back', number_runnings_path %>

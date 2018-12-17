@@ -1,0 +1,2 @@
+class NumberRunning < ApplicationRecord
+end

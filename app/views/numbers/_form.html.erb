@@ -1,0 +1,11 @@
+<%= form_tag("numbers/get_new_number", method: "post") do |form| %>
+
+  <div class="field">
+    <%= label_tag "Specify unique number to request" %>
+    <%= text_field_tag :value %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag "Get Number" %>
+  </div>
+<% end %>

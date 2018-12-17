@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Numbers</h1>
+
+
+<%= render 'form', number: @number %>
+
+<% if !@new_number.nil? %>
+  <% if @new_number == "not_found" %>
+    Number not found
+  <% else %>
+    Your number: <%= @new_number.to_s.insert(6, '-').insert(3, '-') %>
+  <% end %>
+<% end %>
